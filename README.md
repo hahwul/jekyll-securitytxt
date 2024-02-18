@@ -1,4 +1,4 @@
-# Jekyll::Securitytxt
+# jekyll-securitytxt
 
 ## Installation
 ```ruby
