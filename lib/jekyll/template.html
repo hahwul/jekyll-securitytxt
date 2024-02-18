@@ -1,35 +1,30 @@
-{% if site.security_txt.contact %}
+{% if site.security_txt.comment -%}
+# {{ site.security_txt.comment }}
+{% endif -%}
+{% if site.security_txt.contact -%}
 Contact: {{ site.security_txt.contact }}
-{% endif %}
-
-{% if site.security_txt.expires %}
+{% endif -%}
+{% if site.security_txt.expires -%}
 Expires: {{ site.security_txt.expires }}
-{% endif %}
-
-{% if site.security_txt.encryption %}
+{% endif -%}
+{% if site.security_txt.encryption -%}
 Encryption: {{ site.security_txt.encryption }}
-{% endif %}
-
-{% if site.security_txt.preferred_languages %}
+{% endif -%}
+{% if site.security_txt.preferred_languages -%}
 Preferred-Languages: {{ site.security_txt.preferred_languages }}
-{% endif %}
-
-{% if site.security_txt.acknowledgments %}
+{% endif -%}
+{% if site.security_txt.acknowledgments -%}
 Acknowledgments: {{ site.security_txt.acknowledgments }}
-{% endif %}
-
-{% if site.security_txt.policy %}
+{% endif -%}
+{% if site.security_txt.policy -%}
 Policy: {{ site.security_txt.policy }}
-{% endif %}
-
-{% if site.security_txt.hiring %}
+{% endif -%}
+{% if site.security_txt.hiring -%}
 Hiring: {{ site.security_txt.hiring }}
-{% endif %}
-
-{% if site.security_txt.csaf %}
+{% endif -%}
+{% if site.security_txt.csaf -%}
 CSAF: {{ site.security_txt.csaf }}
-{% endif %}
-
-{% if site.security_txt.canonical %}
+{% endif -%}
+{% if site.security_txt.canonical -%}
 Canonical: {{ site.security_txt.canonical }}
-{% endif %}
+{% endif -%}
