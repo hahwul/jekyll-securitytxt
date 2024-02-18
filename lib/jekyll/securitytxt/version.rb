@@ -2,6 +2,6 @@
 
 module Jekyll
   module Securitytxt
-    VERSION = "0.1.0"
+    VERSION = "0.1.0-pre.2"
   end
 end
