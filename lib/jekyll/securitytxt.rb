@@ -29,7 +29,7 @@ module Jekyll
 
       # Get path of the template file.
       def source_path(file = "template.html")
-        File.expand_path "#{file}", __dir__
+        File.expand_path file.to_s, __dir__
       end
 
       # Path of the security.txt file.
