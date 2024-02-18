@@ -1,5 +1,9 @@
 # jekyll-securitytxt
 
+Jekyll plugin for [security.txt](https://www.rfc-editor.org/rfc/rfc9116)[^1]
+
+[^1]: RFC9116
+
 ## Installation
 ```ruby
 group :jekyll_plugins do
