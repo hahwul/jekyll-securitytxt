@@ -23,7 +23,7 @@ module Jekyll
         file_pattern = %r{.well-known/security\.txt?}
         exists = @site.static_files.any? { |p| p.url =~ file_pattern }
         warn_msg = "Found a security.txt file in source tree matching /#{file_pattern.source}/; not generating one..."
-        Jekyll.logger.warn "jekyll-securitytxt", warn_msg if exists
+        Jekyll.logger.warn "Jekyll-securitytxt", warn_msg if exists
         exists
       end
 
@@ -39,7 +39,7 @@ module Jekyll
 
       # Construct a file object from a template with content that can be added to generated pages
       def verification_file
-        Jekyll.logger.info "jekyll-securitytxt", "Generating #{securitytxt_path}"
+        Jekyll.logger.info "Jekyll-securitytxt", "Generating #{securitytxt_path}"
         page = PageWithoutAFile.new(@site, __dir__, "", securitytxt_path)
         page.content = File.read(source_path)
         page.data["layout"] = nil
