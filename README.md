@@ -22,7 +22,7 @@ security_txt:
   preferred_languages: "ko, en"
 ```
 
-if you 
+If you need a custom message? 
 ```yaml
 security_txt:
   custom_message: |
