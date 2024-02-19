@@ -26,7 +26,7 @@ if you
 ```yaml
 security_txt:
   custom_message: |
-      # If you would like to report a security issue you may report it to us via bugbounty platform
+      If you would like to report a security issue you may report it to us via bugbounty platform
       Contact: https://
 ```
 
