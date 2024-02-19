@@ -28,3 +28,6 @@ CSAF: {{ site.security_txt.csaf }}
 {% if site.security_txt.canonical -%}
 Canonical: {{ site.security_txt.canonical }}
 {% endif -%}
+{% if site.security_txt.custom_message -%}
+{{ site.security_txt.custom_message }}
+{% endif -%}

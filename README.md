@@ -22,5 +22,30 @@ security_txt:
   preferred_languages: "ko, en"
 ```
 
+if you 
+```yaml
+security_txt:
+  custom_message: |
+      # If you would like to report a security issue you may report it to us via bugbounty platform
+      Contact: https://
+```
+
+## Supported
+
+```yaml
+security_txt:
+  comment:
+  contact:
+  expires:
+  encryption:
+  preferred_languages:
+  acknowledgments:
+  policy:
+  hiring:
+  csaf:
+  canonical:
+  custom_message:
+```
+
 > [!TIP]
 > See here for information on the column. https://securitytxt.org*
