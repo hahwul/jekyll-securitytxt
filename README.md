@@ -18,7 +18,12 @@ end
 # in _config.yml
 security_txt:
   comment: If you find any security issues on this site, please contact me!
-  contact: "mailto:<YOUR-EMAIL>"
+  contact: 
+  - mailto:<YOUR-EMAIL>
+  - https://YOUR_DOMAIN/CONTACT
+  hiring:
+  - https://URL1
+  - https://URL2
   preferred_languages: "ko, en"
 ```
 
