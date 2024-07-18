@@ -2,25 +2,33 @@
 # {{ site.security_txt.comment }}
 {% endif -%}
 {% if site.security_txt.contact -%}
-Contact: {{ site.security_txt.contact }}
+{% for contact in site.security_txt.contact %}
+Contact: {{ contact }}
+{% endfor %}
 {% endif -%}
 {% if site.security_txt.expires -%}
 Expires: {{ site.security_txt.expires }}
 {% endif -%}
 {% if site.security_txt.encryption -%}
-Encryption: {{ site.security_txt.encryption }}
+{% for encryption in site.security_txt.encryption %}
+Encryption: {{ encryption }}
+{% endfor %}
 {% endif -%}
 {% if site.security_txt.preferred_languages -%}
 Preferred-Languages: {{ site.security_txt.preferred_languages }}
 {% endif -%}
 {% if site.security_txt.acknowledgments -%}
-Acknowledgments: {{ site.security_txt.acknowledgments }}
+{% for acknowledgment in site.security_txt.acknowledgments %}
+Acknowledgments: {{ acknowledgment }}
+{% endfor %}
 {% endif -%}
 {% if site.security_txt.policy -%}
 Policy: {{ site.security_txt.policy }}
 {% endif -%}
 {% if site.security_txt.hiring -%}
-Hiring: {{ site.security_txt.hiring }}
+{% for hiring in site. security_txt.hiring %}
+Hiring: {{ hiring }}
+{% endfor %}
 {% endif -%}
 {% if site.security_txt.csaf -%}
 CSAF: {{ site.security_txt.csaf }}
@@ -28,6 +36,8 @@ CSAF: {{ site.security_txt.csaf }}
 {% if site.security_txt.canonical -%}
 Canonical: {{ site.security_txt.canonical }}
 {% endif -%}
-{% if site.security_txt.custom_message -%}
-{{ site.security_txt.custom_message }}
+{% if site.security_txt.custom_messages -%}
+{% for custom_message in site.security_txt.custom_messages %}
+{{ custom_message }}
+{% endfor %}
 {% endif -%}
