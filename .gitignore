@@ -12,3 +12,6 @@
 
 # Gemfile.lock
 Gemfile.lock
+
+# Gem
+jekyll-securitytxt-*.gem
