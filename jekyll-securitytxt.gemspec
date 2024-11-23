@@ -9,7 +9,8 @@ Gem::Specification.new do |spec|
   spec.email = ["hahwul@gmail.com"]
 
   spec.summary = "A Jekyll plugin for generating security.txt files"
-  spec.description = "This plugin helps you generate security.txt files for your Jekyll site, providing security contact information and policies."
+  spec.description = "This plugin helps you generate security.txt files for your Jekyll site, " \
+                     "providing security contact information and policies."
   spec.homepage = "https://github.com/hahwul/jekyll-securitytxt"
   spec.required_ruby_version = ">= 2.6.0"
   spec.license = "MIT"
