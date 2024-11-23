@@ -24,7 +24,8 @@ module Jekyll
         exists = @site.static_files.any? { |p| p.url =~ file_pattern }
         if exists
           Jekyll.logger.warn "Jekyll-securitytxt",
-                             "Found a security.txt file in source tree matching /#{file_pattern.source}/; not generating one..."
+                             "Found a security.txt file in source tree matching",
+                             "/#{file_pattern.source}/; not generating one..."
         end
         exists
       end
