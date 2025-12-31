@@ -27,10 +27,11 @@ security_txt:
   preferred_languages: "ko, en"
 ```
 
-If you need a custom message? 
+If you need custom messages? 
 ```yaml
 security_txt:
-  custom_message: |
+  custom_messages:
+    - |
       If you would like to report a security issue you may report it to us via bugbounty platform
       Contact: https://
 ```
@@ -49,7 +50,7 @@ security_txt:
   hiring:
   csaf:
   canonical:
-  custom_message:
+  custom_messages:
 ```
 
 > [!TIP]
