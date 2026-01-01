@@ -20,7 +20,7 @@ module Jekyll
 
       # Check if a security.txt file already exists in the source tree.
       def security_txt_file_exists?
-        file_pattern = %r{.well-known/security\.txt?}
+        file_pattern = %r{\.well-known/security\.txt}
         exists = @site.static_files.any? { |p| p.url =~ file_pattern }
         if exists
           Jekyll.logger.warn "Jekyll-securitytxt",
